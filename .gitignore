@@ -18,6 +18,8 @@ _autosave-*
 fp-info-cache
 ~*.lck
 \#auto_saved_files#
+# KiCad 10 local history (per-machine snapshots)
+.history/
 
 # Netlist files (exported from Eeschema)
 *.net

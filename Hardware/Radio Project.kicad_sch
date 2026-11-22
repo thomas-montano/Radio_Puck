@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "ca6389fe-9846-40e3-87a4-456cfcfc0777")
 	(paper "A4")
 	(title_block
@@ -1426,11 +1426,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "2dc9614d-695e-43f1-a091-76db997bc2c6")
 		(property "Sheetname" "RF Chain"
 			(at 124.46 178.3584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,6 +1442,8 @@
 		)
 		(property "Sheetfile" "rf_chain.kicad_sch"
 			(at 124.46 191.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1468,11 +1472,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "8127e5c0-6601-4146-a9f2-512dea28772c")
 		(property "Sheetname" "Ethernet PHY"
 			(at 93.98 178.3584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1482,6 +1488,8 @@
 		)
 		(property "Sheetfile" "ethernet_phy.kicad_sch"
 			(at 93.98 191.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1510,11 +1518,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "bd0f5978-e4b1-41e2-96b4-94a3773ac12f")
 		(property "Sheetname" "3V3 Power"
 			(at 151.13 178.3584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1524,6 +1534,8 @@
 		)
 		(property "Sheetfile" "power.kicad_sch"
 			(at 151.13 191.0846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1552,11 +1564,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "ea821ff4-3fef-400e-81c9-25868b35804d")
 		(property "Sheetname" "Microcontroller"
 			(at 93.98 160.5784 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1566,6 +1580,8 @@
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
 			(at 93.98 173.3046 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1576,7 +1592,7 @@
 		(instances
 			(project "Radio Project"
 				(path "/ca6389fe-9846-40e3-87a4-456cfcfc0777"
-					(page "1")
+					(page "5")
 				)
 			)
 		)

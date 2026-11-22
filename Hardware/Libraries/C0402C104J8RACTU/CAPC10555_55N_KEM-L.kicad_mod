@@ -1,7 +1,7 @@
 (footprint "CAPC10555_55N_KEM-L"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(tags "C0402C104J8RACTU ")
 	(property "Reference" "REF**"
@@ -53,6 +53,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -0.728199 -0.351199)
 		(end 0.728199 -0.351199)
@@ -238,8 +239,6 @@
 		(uuid "e9d32c40-b420-4d75-8f78-649abac4f4b1")
 	)
 	(zone
-		(net 0)
-		(net_name "")
 		(layer "F.Cu")
 		(uuid "5aa4869e-c53a-4e71-9eb1-e525ab3ae2c4")
 		(hatch full 0.508)
@@ -247,7 +246,6 @@
 			(clearance 0)
 		)
 		(min_thickness 0.254)
-		(filled_areas_thickness no)
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
@@ -262,6 +260,7 @@
 		(fill
 			(thermal_gap 0.508)
 			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
 		)
 		(polygon
 			(pts
