@@ -33,7 +33,6 @@ fp-info-cache
 **/*.rs.bk
 .#*
 .gdb_history
-Cargo.lock
 target/
 
 # editor files
