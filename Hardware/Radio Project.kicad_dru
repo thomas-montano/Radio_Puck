@@ -1,0 +1,30 @@
+(version 1)
+
+# Vendor land patterns that are tighter than the board defaults
+(rule "J2 USB-C land pattern"
+  (condition "A.memberOfFootprint('J2') && B.memberOfFootprint('J2')")
+  (constraint hole_clearance (min 0.25mm))
+  (constraint edge_clearance (min 0.25mm)))
+
+# TODO: check against SiTime's recommended land pattern (0.105 mm pad gap)
+(rule "U2 CSP land pattern"
+  (condition "A.memberOfFootprint('U2') && B.memberOfFootprint('U2')")
+  (constraint clearance (min 0.1mm)))
+
+# Net class widths/gaps are only router defaults; these make DRC enforce them.
+# 100R on JLC 8L 1.2mm (2116) is only reachable on the outer layers.
+(rule "ETH MDI 100R"
+  (condition "A.hasNetclass('ETH_MDI')")
+  (constraint track_width (min 0.11mm) (opt 0.12mm) (max 0.13mm))
+  (constraint diff_pair_gap (min 0.15mm) (opt 0.17mm) (max 0.2mm))
+  (constraint diff_pair_uncoupled (max 3mm))
+  (constraint skew (max 1mm) (within_diff_pairs)))
+
+(rule "ETH MDI outer layers only"
+  (layer inner)
+  (condition "A.hasNetclass('ETH_MDI')")
+  (constraint disallow track))
+
+(rule "RF 50R"
+  (condition "A.hasNetclass('RF')")
+  (constraint track_width (min 0.17mm) (opt 0.19mm) (max 0.21mm)))
